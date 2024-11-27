@@ -6,4 +6,12 @@ go mod vendor
 
 go build -o readers cmd/main.go && ./readers
 
-go build && ./rssfeedagg  
+
+This is a boilerPlate for a go api project
+
+using go-chi
+using godotenv
+using sqlc
+using postgres
+
+When i use more Go, and learn more about the language, i will change stuff but this is what works for me now
