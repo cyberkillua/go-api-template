@@ -1,0 +1,9 @@
+go run cmd/main.go
+
+go mod tidy
+
+go mod vendor
+
+go build -o readers cmd/main.go && ./readers
+
+go build && ./rssfeedagg  
