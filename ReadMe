@@ -1,3 +1,4 @@
+## commands
 go run cmd/main.go
 
 go mod init github.com/cyberkillua/go-api-template
@@ -18,8 +19,12 @@ go get github.com/lib/pq
 
 go build -o readers cmd/main.go && ./readers
 
+### using air for hot reloading
+go install github.com/air-verse/air@latest
+air --build.cmd "go build -o bin/api cmd/main.go" --build.bin "./bin/api"
 
-This is a boilerPlate for a go api project
+
+## This is a boilerPlate for a go api project
 
 using go-chi
 using godotenv
